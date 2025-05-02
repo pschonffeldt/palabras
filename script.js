@@ -26,9 +26,9 @@ const inputHandler = () => {
   }
   const numberOfCharacters = textareaEl.value.length;
   const twitterCharactersLeft = 280 - numberOfCharacters;
-  const facebookCharactersLeft = 2200 - numberOfCharacters;
-  const tiktokCharactersLeft = 20 - numberOfCharacters;
-  const instagramCharactersLeft = 30 - numberOfCharacters;
+  const facebookCharactersLeft = 63206 - numberOfCharacters;
+  const tiktokCharactersLeft = 4000 - numberOfCharacters;
+  const instagramCharactersLeft = 2200 - numberOfCharacters;
 
     // add visual indicator if 420 characters
   if (numberOfCharacters === 420) {
