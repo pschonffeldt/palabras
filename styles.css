@@ -4,20 +4,6 @@
     box-sizing: border-box;
   }
 
-  textarea {
-    all: unset;
-    box-sizing: border-box;
-    width: 100%;
-    white-space: pre-wrap;
-    overflow-wrap: break-word;
-    word-break: break-word;
-    overflow-x: hidden;
-  }
-  
-  textarea:focus {
-    outline: none;
-    box-shadow: none;
-  }
   
   body {
     font-family: 'Inter', sans-serif;
@@ -39,31 +25,46 @@
       rgba(24, 120, 175, 0.9)
       ),
       url('https://images.unsplash.com/photo-1546453667-8a8d2d07bc20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=100');
+    }
+    
+    .first-heading {
+      font-size: 65px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      color: rgba(255, 255, 255, 0.92);
+      margin-top: 75px;
+    }
+    
+    .first-heading--special {
+      font-weight: 300;
+    }
+    
+    .container {
+      width: 1050px;
+      height: 520px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 55px;
+      display: flex;
+      overflow: hidden;
+    }
+    
+  textarea {
+    all: unset;
+    box-sizing: border-box;
+    width: 100%;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow-x: hidden;
   }
   
-  .first-heading {
-    font-size: 65px;
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    color: rgba(255, 255, 255, 0.92);
-    margin-top: 75px;
+  textarea:focus {
+    outline: none;
+    box-shadow: none;
   }
-  
-  .first-heading--special {
-    font-weight: 300;
-  }
-  
-  .container {
-    width: 1050px;
-    height: 520px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-    margin-top: 55px;
-    display: flex;
-    overflow: hidden;
-  }
-  
+
   .textarea {
     resize: none;
     flex: 2;
@@ -128,6 +129,7 @@
     letter-spacing: 2px;
     font-weight: 500;
     color: #747a7c;
+    text-align: center;
   }
   
   .footer {
@@ -155,15 +157,122 @@
     .stat {
       padding: 15px 10px;
     }
-  
+
     .stat:nth-child(1),
     .stat:nth-child(2),
-    .stat:nth-child(4) {
-      border: none;
+    .stat:nth-child(3),
+    .stat:nth-child(4),
+    .stat:nth-child(5),
+    .stat:nth-child(6) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    
+    .stat:nth-child(2),
+    .stat:nth-child(3),
+    .stat:nth-child(4),
+    .stat:nth-child(5),
+    .stat:nth-child(6),
+    .stat:nth-child(8),
+    .stat:nth-child(9) {
+      border-left: 1px solid rgba(0, 0, 0, 0.08);
     }
   
     .stat__number {
       font-size: 20px;
+    }
+  
+    .footer {
+      width: initial;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+
+  @media (max-width: 1058px) {
+    .container {
+      width: 85vw;
+      flex-direction: column;
+    }
+  
+    .first-heading {
+      font-size: 7vw;
+    }
+  
+    .stat {
+      padding: 15px 10px;
+    }
+
+    .stat:nth-child(1),
+    .stat:nth-child(2),
+    .stat:nth-child(3),
+    .stat:nth-child(4),
+    .stat:nth-child(5) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    
+    .stat:nth-child(2),
+    .stat:nth-child(3),
+    .stat:nth-child(4),
+    .stat:nth-child(5),
+    .stat:nth-child(7),
+    .stat:nth-child(8),
+    .stat:nth-child(9) {
+      border-left: 1px solid rgba(0, 0, 0, 0.08);
+    }
+  
+    .stat__number {
+      font-size: 20px;
+    }
+  
+    .footer {
+      width: initial;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+
+  @media (max-width: 705px) {
+    .container {
+      width: 85vw;
+      flex-direction: column;
+    }
+  
+    .first-heading {
+      font-size: 7vw;
+    }
+  
+    .stat {
+      padding: 15px 10px;
+    }
+
+    .stat:nth-child(1),
+    .stat:nth-child(2),
+    .stat:nth-child(3),
+    .stat:nth-child(4),
+    .stat:nth-child(5),
+    .stat:nth-child(9) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    
+    .stat:nth-child(2),
+    .stat:nth-child(3),
+    .stat:nth-child(4),
+    .stat:nth-child(5),
+    .stat:nth-child(7),
+    .stat:nth-child(8),
+    .stat:nth-child(9) {
+      border-left: 1px solid rgba(0, 0, 0, 0.08);
+    }
+  
+    .stat__number {
+      font-size: 15px;
+    }
+
+    .second-heading {
+      font-size: 12px;
     }
   
     .footer {
