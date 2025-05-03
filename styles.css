@@ -3,9 +3,20 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
+
   textarea {
     all: unset;
+    box-sizing: border-box;
+    width: 100%;
+    white-space: pre-wrap;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    overflow-x: hidden;
+  }
+  
+  textarea:focus {
+    outline: none;
+    box-shadow: none;
   }
   
   body {
