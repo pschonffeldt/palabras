@@ -281,3 +281,150 @@
       align-items: center;
     }
   }
+
+
+  @media (max-width: 529px) {
+    .container {
+      width: 85vw;
+      flex-direction: column;
+    }
+  
+    .first-heading {
+      font-size: 6vw;
+    }
+
+    .textarea {
+      resize: none;
+      flex: 2;
+      font: inherit;
+      padding: 30px 40px;
+      font-size: 16px;
+    }
+  
+    .stat {
+      padding: 15px 10px;
+    }
+
+    .stat:nth-child(1),
+    .stat:nth-child(2),
+    .stat:nth-child(3),
+    .stat:nth-child(4),
+    .stat:nth-child(5),
+    .stat:nth-child(9) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    
+    .stat:nth-child(2),
+    .stat:nth-child(3),
+    .stat:nth-child(4),
+    .stat:nth-child(5),
+    .stat:nth-child(7),
+    .stat:nth-child(8),
+    .stat:nth-child(9) {
+      border-left: 1px solid rgba(0, 0, 0, 0.08);
+    }
+  
+    .stat__number {
+      font-size: 14px;
+    }
+
+    .second-heading {
+      font-size: 12px;
+    }
+  
+    .footer {
+      width: 80%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+    }
+
+    .copyright {
+      font-size: 12px;
+    }
+
+    .data {
+      font-size: 12px;
+    }
+  }
+
+
+  @media (max-width: 352px) {
+    .container {
+      width: 85vw;
+      flex-direction: column;
+    }
+  
+    .first-heading {
+      font-size: 6vw;
+    }
+
+    .textarea {
+      resize: none;
+      flex: 2;
+      font: inherit;
+      padding: 30px 40px;
+      font-size: 16px;
+    }
+  
+    .stat {
+      padding: 5px 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      padding-left: 30px;
+
+    }
+
+    .stat:nth-child(1),
+    .stat:nth-child(2),
+    .stat:nth-child(3),
+    .stat:nth-child(4),
+    .stat:nth-child(5),
+    .stat:nth-child(9) {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    }
+    
+    .stat:nth-child(2),
+    .stat:nth-child(3),
+    .stat:nth-child(4),
+    .stat:nth-child(5),
+    .stat:nth-child(7),
+    .stat:nth-child(8),
+    .stat:nth-child(9) {
+      border-left: 1px solid rgba(0, 0, 0, 0.08);
+    }
+  
+    .stat__number {
+      font-size: 12px;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0px;
+      padding-right: 10px;
+
+    }
+
+    .second-heading {
+      font-size: 12px;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .footer {
+      width: 80%;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+
+    }
+
+    .copyright {
+      font-size: 12px;
+    }
+
+    .data {
+      font-size: 12px;
+    }
+  }
