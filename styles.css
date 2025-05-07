@@ -473,7 +473,7 @@
 /* ==================================== 250px ==================================== */
 /* ==================================== 250px ==================================== */
 @media (max-width: 250px) {
-  .container, .background, .first-heading,.footer {
+  .container, .background, .first-heading, .sub-heading, .footer {
     display: none !important;
   }
 
