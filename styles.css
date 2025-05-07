@@ -176,6 +176,17 @@
 
 
 /* ==================================== Responsive ==================================== */
+/* ==================================== Responsive ==================================== */
+/* ==================================== Responsive ==================================== */
+/* ==================================== Responsive ==================================== */
+/* ==================================== Responsive ==================================== */
+/* ==================================== Responsive ==================================== */
+/* ==================================== Responsive ==================================== */
+
+
+
+/* ==================================== 1150px ==================================== */
+/* ==================================== 1150px ==================================== */
 
   @media (max-width: 1150px) {
     .container {
@@ -228,6 +239,8 @@
   }
 
 
+/* ==================================== 1058px ==================================== */
+/* ==================================== 1058px ==================================== */
 
   @media (max-width: 1058px) {
     .container {
@@ -261,10 +274,6 @@
       border-left: 1px solid rgba(0, 0, 0, 0.08);
     }
   
-    .stat__number {
-      font-size: 20px;
-    }
-  
     .footer {
       width: initial;
       flex-direction: column;
@@ -272,6 +281,9 @@
     }
   }
 
+
+/* ==================================== 705px ==================================== */
+/* ==================================== 705px ==================================== */
 
   @media (max-width: 705px) {
     .container {
@@ -313,7 +325,7 @@
     }
   
     .stat__number {
-      font-size: 15px;
+      font-size: 14px;
     }
 
     .second-heading {
@@ -327,7 +339,8 @@
     }
   }
 
-
+/* ==================================== 529px ==================================== */
+/* ==================================== 529px ==================================== */
   @media (max-width: 529px) {
     .container {
       width: 85vw;
@@ -358,37 +371,6 @@
       font-size: 16px;
     }
   
-    .stat {
-      padding: 15px 10px;
-    }
-
-    .stat:nth-child(1),
-    .stat:nth-child(2),
-    .stat:nth-child(3),
-    .stat:nth-child(4),
-    .stat:nth-child(5),
-    .stat:nth-child(9) {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    }
-    
-    .stat:nth-child(2),
-    .stat:nth-child(3),
-    .stat:nth-child(4),
-    .stat:nth-child(5),
-    .stat:nth-child(7),
-    .stat:nth-child(8),
-    .stat:nth-child(9) {
-      border-left: 1px solid rgba(0, 0, 0, 0.08);
-    }
-  
-    .stat__number {
-      font-size: 14px;
-    }
-
-    .second-heading {
-      font-size: 12px;
-    }
-  
     .footer {
       width: 80%;
       flex-direction: column;
@@ -407,6 +389,8 @@
   }
 
 
+  /* ==================================== 352px ==================================== */
+  /* ==================================== 352px ==================================== */
   @media (max-width: 352px) {
     .container {
       width: 85vw;
@@ -443,26 +427,6 @@
       align-items: center;
       justify-content: flex-start;
       padding-left: 30px;
-
-    }
-
-    .stat:nth-child(1),
-    .stat:nth-child(2),
-    .stat:nth-child(3),
-    .stat:nth-child(4),
-    .stat:nth-child(5),
-    .stat:nth-child(9) {
-      border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    }
-    
-    .stat:nth-child(2),
-    .stat:nth-child(3),
-    .stat:nth-child(4),
-    .stat:nth-child(5),
-    .stat:nth-child(7),
-    .stat:nth-child(8),
-    .stat:nth-child(9) {
-      border-left: 1px solid rgba(0, 0, 0, 0.08);
     }
   
     .stat__number {
@@ -506,8 +470,8 @@
   
     
   }
-
-/* === Below small === */
+/* ==================================== 250px ==================================== */
+/* ==================================== 250px ==================================== */
 @media (max-width: 250px) {
   .container, .background, .first-heading,.footer {
     display: none !important;
