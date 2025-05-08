@@ -5,6 +5,7 @@ const textareaEl = document.querySelector('.textarea');
 const charactersNumberEl = document.querySelector('.stat__number--characters');
 const wordsNumberEl = document.querySelector('.stat__number--words');
 const sentencesNumberEl = document.querySelector('.stat__number--sentences');
+const paragraphsNumberEl = document.querySelector('.stat__number--paragraphs');
   
 // DOM social media
 const twitterNumberEl = document.querySelector('.stat__number--twitter');
@@ -33,10 +34,16 @@ const inputHandler = () => {
     numberOfWords = 0;
   }
   const numberOfCharacters = textareaEl.value.length;
+  // const numberOfCharacters = textareaEl.value.replace(/\s/g, '').length;
+
 
 
   const text = textareaEl.value;
   const numberOfSentences = (text.match(/(?<![.!?])[.!?](?![.!?])/g) || []).length;
+
+
+  const newlineMatches = text.match(/\n/g);
+  const numberOfParagraphs = newlineMatches ? newlineMatches.length : 0;
 
 
   const twitterCharactersLeft = 280 - numberOfCharacters;
@@ -108,6 +115,11 @@ const inputHandler = () => {
   wordsNumberEl.textContent = numberOfWords;
   charactersNumberEl.textContent = numberOfCharacters;
   sentencesNumberEl.textContent = numberOfSentences;
+  paragraphsNumberEl.textContent = numberOfParagraphs;
+
+
+
+
   twitterNumberEl.textContent = twitterCharactersLeft;
   facebookNumberEl.textContent = facebookCharactersLeft;
   tiktokNumberEl.textContent = tiktokCharactersLeft;
