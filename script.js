@@ -1,11 +1,11 @@
-// determine new numbers
+// DOM textarea
 const textareaEl = document.querySelector('.textarea');
   
-// determine new numbers
+// DOM text
 const charactersNumberEl = document.querySelector('.stat__number--characters');
 const wordsNumberEl = document.querySelector('.stat__number--words');
   
-// determine new numbers
+// DOM social media
 const twitterNumberEl = document.querySelector('.stat__number--twitter');
 const facebookNumberEl = document.querySelector('.stat__number--facebook');
 const tiktokNumberEl = document.querySelector('.stat__number--tiktok');
@@ -41,7 +41,7 @@ const inputHandler = () => {
   const pinterestCharactersLeft = 500 - numberOfCharacters;
   const redditCharactersLeft = 40000 - numberOfCharacters;
 
-    // add visual if characters is 420
+  // add visual if characters is 420
   if (numberOfCharacters === 420) {
     charactersNumberEl.classList.add('alt');
   } else {
@@ -50,7 +50,7 @@ const inputHandler = () => {
 
 
 
-    // add visual indicator if limit is exceeded
+  // add visual indicator if limit is exceeded
   if (twitterCharactersLeft < 0) {
     twitterNumberEl.classList.add('stat__number--limit');
   } else {
@@ -99,7 +99,7 @@ const inputHandler = () => {
     redditNumberEl.classList.remove('stat__number--limit');
   }
 
-    // set new numbers
+  // set new numbers
   wordsNumberEl.textContent = numberOfWords;
   charactersNumberEl.textContent = numberOfCharacters;
   twitterNumberEl.textContent = twitterCharactersLeft;
