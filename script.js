@@ -4,6 +4,7 @@ const textareaEl = document.querySelector('.textarea');
 // DOM text
 const charactersNumberEl = document.querySelector('.stat__number--characters');
 const wordsNumberEl = document.querySelector('.stat__number--words');
+const sentencesNumberEl = document.querySelector('.stat__number--sentences');
   
 // DOM social media
 const twitterNumberEl = document.querySelector('.stat__number--twitter');
@@ -32,6 +33,12 @@ const inputHandler = () => {
     numberOfWords = 0;
   }
   const numberOfCharacters = textareaEl.value.length;
+
+
+  const text = textareaEl.value;
+  const numberOfSentences = (text.match(/(?<![.!?])[.!?](?![.!?])/g) || []).length;
+
+
   const twitterCharactersLeft = 280 - numberOfCharacters;
   const facebookCharactersLeft = 63206 - numberOfCharacters;
   const tiktokCharactersLeft = 4000 - numberOfCharacters;
@@ -47,8 +54,6 @@ const inputHandler = () => {
   } else {
     charactersNumberEl.classList.remove('alt');
   }
-
-
 
   // add visual indicator if limit is exceeded
   if (twitterCharactersLeft < 0) {
@@ -102,6 +107,7 @@ const inputHandler = () => {
   // set new numbers
   wordsNumberEl.textContent = numberOfWords;
   charactersNumberEl.textContent = numberOfCharacters;
+  sentencesNumberEl.textContent = numberOfSentences;
   twitterNumberEl.textContent = twitterCharactersLeft;
   facebookNumberEl.textContent = facebookCharactersLeft;
   tiktokNumberEl.textContent = tiktokCharactersLeft;
