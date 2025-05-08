@@ -21,6 +21,9 @@ const inputHandler = () => {
   if (textareaEl.value.includes('<script>')) {
     alert("No puedes usar <script> en tu texto.");
     textareaEl.value = textareaEl.value.replace('<script>', '');
+  } else if (textareaEl.value.includes('tula')) {
+    alert("¿Que importa el nombre?");
+    textareaEl.value = textareaEl.value.replace('tula', '');
   }
 
   // determine new numbers

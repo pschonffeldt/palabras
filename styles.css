@@ -4,7 +4,6 @@
     box-sizing: border-box;
   }
 
-  
   body {
     font-family: 'Inter', sans-serif;
     background-color: #E1E8EB;
@@ -24,13 +23,10 @@
       hsla(277, 100%, 32%, 0.902), 
       hsla(202, 76%, 39%, 0.902)
       )
-
-      /* ,url('https://images.unsplash.com/photo-1546453667-8a8d2d07bc20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=100'); */
     }
     
     .first-heading {
-      font-size: 25px;
-      /* font-size: 1vw; */
+      font-size: 5vw; 
       letter-spacing: 5px;
       text-transform: uppercase;
       color: white;
@@ -39,7 +35,6 @@
 
     .sub-heading {
       font-size: 15px;
-      /* font-size: 1vw; */
       letter-spacing: 1px;
       text-transform: uppercase;
       color: white;
