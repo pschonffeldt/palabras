@@ -1,7 +1,3 @@
-
-
-
-
 // DOM textarea
 const textareaEl = document.querySelector('.textarea');
   
@@ -10,6 +6,8 @@ const charactersNumberEl = document.querySelector('.stat__number--characters');
 const wordsNumberEl = document.querySelector('.stat__number--words');
 const sentencesNumberEl = document.querySelector('.stat__number--sentences');
 const paragraphsNumberEl = document.querySelector('.stat__number--paragraphs');
+const dotsNumberEl = document.querySelector('.stat__number--dots');
+const spacesNumberEl = document.querySelector('.stat__number--spaces');
 
 // DOM platforms
 const platforms = ['twitter', 'facebook', 'tiktok', 'instagram', 'linkedin', 'youtube', 'pinterest', 'reddit'];
@@ -42,6 +40,12 @@ const inputHandler = () => {
 
   // Count paragraphs by counting line breaks, +1 to account for the first paragraph
   const numberOfParagraphs = (text.match(/\n/g) || []).length + 1;
+
+  // Count dots
+  const numberOfDots = (text.match(/\./g) || []).length;
+
+  // Count spaces
+  const numberOfSpaces = (text.match(/ /g) || []).length;
 
 
   // SOCIAL MEDIA CHARACTER LIMITS
@@ -80,6 +84,8 @@ const inputHandler = () => {
   wordsNumberEl.textContent = numberOfWords;
   sentencesNumberEl.textContent = numberOfSentences;
   paragraphsNumberEl.textContent = numberOfParagraphs;
+  dotsNumberEl.textContent = numberOfDots;
+  spacesNumberEl.textContent = numberOfSpaces;
 };
 
 textareaEl.addEventListener('input', inputHandler);
