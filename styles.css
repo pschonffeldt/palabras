@@ -25,42 +25,42 @@
       )
     }
     
-    .first-heading {
-      font-size: 5vw; 
-      letter-spacing: 5px;
-      text-transform: uppercase;
-      color: white;
-      margin-top: 75px;
-    }
+  .first-heading {
+    font-size: 5vw; 
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 75px;
+  }
 
-    .sub-heading {
-      font-size: 15px;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      color: white;
-      margin-top: 25px;
-      text-align: center;
-      max-width: 800px;
-    }
+  .sub-heading {
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 25px;
+    text-align: center;
+    max-width: 800px;
+  }
     
-    .first-heading--special {
-      font-weight: 300;
-    }
+  .first-heading--special {
+    font-weight: 300;
+  }
 
-    .sub-heading--special {
-      font-weight: 300;
-    }
-    
-    .container {
-      width: 1050px;
-      height: 520px;
-      background-color: #fff;
-      border-radius: 10px;
-      box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
-      margin-top: 55px;
-      display: flex;
-      overflow: hidden;
-    }
+  .sub-heading--special {
+    font-weight: 300;
+  }
+  
+  .container {
+    width: 1050px;
+    height: 520px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 55px;
+    display: flex;
+    overflow: hidden;
+  }
     
   textarea {
     all: unset;
@@ -111,13 +111,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: #000000;
-     */
-     background-image: linear-gradient(
-      to right, 
-      hsla(237, 36%, 51%, 0.902), 
-      hsla(202, 76%, 39%, 0.902)
-      )
+    background-image: linear-gradient(to right,hsla(237, 36%, 51%, 0.902),hsla(202, 76%, 39%, 0.902))
   }
   
   .stat:nth-child(2),
@@ -196,18 +190,8 @@
 
 
 /* ==================================== Responsive ==================================== */
-/* ==================================== Responsive ==================================== */
-/* ==================================== Responsive ==================================== */
-/* ==================================== Responsive ==================================== */
-/* ==================================== Responsive ==================================== */
-/* ==================================== Responsive ==================================== */
-/* ==================================== Responsive ==================================== */
-
-
 
 /* ==================================== 1150px ==================================== */
-/* ==================================== 1150px ==================================== */
-
   @media (max-width: 1150px) {
     .container {
       width: 85vw;
@@ -228,22 +212,26 @@
       padding: 15px 10px;
     }
 
-    .stat:nth-child(1),
-    .stat:nth-child(2),
-    .stat:nth-child(3),
-    .stat:nth-child(4),
-    .stat:nth-child(5),
-    .stat:nth-child(6) {
+    .stat:nth-child(9),
+    .stat:nth-child(10),
+    .stat:nth-child(11),
+    .stat:nth-child(12),
+    .stat:nth-child(13),
+    .stat:nth-child(14) {
       border-bottom: 1px solid rgba(0, 0, 0, 0.08);
     }
     
-    .stat:nth-child(2),
     .stat:nth-child(3),
     .stat:nth-child(4),
     .stat:nth-child(5),
     .stat:nth-child(6),
-    .stat:nth-child(8),
-    .stat:nth-child(9) {
+    .stat:nth-child(7),
+    .stat:nth-child(10),
+    .stat:nth-child(11),
+    .stat:nth-child(12),
+    .stat:nth-child(13),
+    .stat:nth-child(14),
+    .stat:nth-child(16) {
       border-left: 1px solid rgba(0, 0, 0, 0.08);
     }
   
@@ -270,6 +258,13 @@
   
     .first-heading {
       font-size: 7vw;
+    }
+
+    .stats {
+      flex: 1;
+      background-color: #F1F6F8;
+      display: flex;
+      flex-wrap: wrap;
     }
   
     .stat {
